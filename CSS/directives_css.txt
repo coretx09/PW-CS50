@@ -1,0 +1,82 @@
+**** COHERENCE :
+ La cohérence peut être appliquée de toutes sortes de façons, par exemple:
+
+  - En utilisant les mêmes conventions de dénomination pour les classes,
+  - En choisissant une méthode pour décrire la couleur 
+  - En conservant une mise en forme cohérente, par exemple:
+     - nombres d'espace pour indenter le code 
+     - ou tabulations pour indenter le code 
+
+    
+
+**** FORMATAGE DU CSS LISIBLE :
+ Il y a plusieurs façons de voir le format CSS:
+
+  - Certains développeurs mettent toutes les règles sur une seule ligne
+     .box { background-color: #567895; }
+      h2 { background-color: black; color: white; }
+
+  - D'autres développeurs préfèrent tout casser sur une nouvelle ligne: 
+     .box {
+       background-color: #567895;
+     }
+
+     h2 {
+       background-color: black;
+       color: white;
+     }         
+
+
+
+**** COMMENTAIRE:
+ L'ajout de commentaires à votre CSS aidera tout futur développeur à
+ travailler avec votre fichier CSS, mais vous aidera également lorsque
+ vous reviendrez au projet après une pause.
+
+ Un bon conseil est d'ajouter également un bloc de commentaires entre
+ les sections logiques,pour aider à localiser rapidement différentes
+ sections lors de la numérisation, ou même vous donner quelque chose
+ N   à rechercher pour accéder directement à cette partie du CSS
+
+
+
+**** SECTIONS LOGIQUES:
+ C'est une bonne idée d'avoir tous les styles communs en premier
+ dans la feuille de style. 
+ Cela signifie tous les styles qui s'appliqueront généralement
+ à moins que vous ne fassiez quelque chose de spécial avec cet élément
+ 
+  - STYLE PAR DEFAUT POUR LE TYPE:
+
+   /* || GENERAL STYLES */
+   body { ... }
+   h1, h2, h3, h4 { ... }
+   ul { ... }
+
+  - CLASSES UTILITAIRES:
+
+   /* || UTILITIES */
+   .nobullets {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+   }
+  
+  - MISE EN PAGE DE BASE:
+
+   /* || SITEWIDE */
+   .main-nav { ... }
+   .logo { ... }
+
+  - ELEMENTS OU PAGES SPECIFQUE:
+
+   /* || STORE PAGES */
+   .product-listing { ... }
+   .product-box { ... }
+
+ Évitez les sélecteurs trop spécifiques
+
+
+
+**** DIVISER LES FEUILLES CSS:
+ Cela peut faciliter l'organisation de votre CSS

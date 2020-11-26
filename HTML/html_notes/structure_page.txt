@@ -1,0 +1,45 @@
+***** STRUCTURE PAGES : 
+
+ **** balises structurantes:
+   
+   <header>  : l'en-tête
+      <header>
+      LOGO, BANNIERE, SLOGAN,....
+      </header>
+
+      Il peut y avoir plusieurs en-têtes dans votre page. 
+      Si celle-ci est découpée en plusieurs sections 
+    
+
+
+   <footer>  : le pied de page
+     <footer>
+     LIENS CONTACT, AUTEUR, MENTIONS LEGALES,.....
+     </footer>
+
+
+   <nav>  : principaux liens de navigation
+     <nav>
+     MENU PRINCIPAL
+     </nav>
+
+     Généralement, le menu est réalisé sous forme de liste
+     à puces à l'intérieur de la balise <nav>
+
+
+
+   <section>  : une section de page
+     Sert à regrouper des contenus en fonction de leur thématique.
+     Englobe généralement une portion du contenu au centre de la page.
+     Chaque section peut avoir son titre de niveau 1 ( <h1>  ),
+     de même que l'en-tête peut contenir un titre <h1>  lui aussi.
+
+
+
+   <aside>  : informations complémentaires 
+     La balise <aside>  est conçue pour contenir des informations
+     complémentaires au document que l'on visualise. Ces informations
+     sont  généralement placées sur le côté (bien que ce ne soit pas une obligation)
+
+     Il peut y avoir plusieurs blocs <aside>  dans la page.
+

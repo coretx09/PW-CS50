@@ -1,0 +1,184 @@
+**** HTML et CSS
+
+ (langage de balisage utilisé pour décrire une page Web,
+ et une procédure pour rendre nos sites plus attrayants visuellement)
+
+
+
+******   HTML (langage de balisage hypertexte) *****
+
+ HTML est un langage de balisage qui définit la structure d’une page Web. 
+
+ Il est interprété par votre navigateur Web (Safari, Google Chrome, Firefox, etc.) 
+ afin d’afficher du contenu sur votre écran.
+
+
+****** Modèle objet document (DOM)
+ <html> 
+   <head> ** EN TETE
+      <title>le titre</title> ** TITRE DE L'ONGLET
+      
+      L’élément d'en tête inclura des informations sur
+       votre page qui n’est pas nécessairement affichée,
+   </head>
+
+   <body> ** CORPS
+      le corps
+      l’élément du corps contiendra ce qui est réellement
+       visible pour les utilisateurs qui visitent le site
+    </body>
+ </html>
+ <!-- COMMENTAIRE -->
+
+
+
+***** LISTES:
+ LISTES NON ORDONNEES:
+  <ul>
+      <li>deux</li>
+      <li>un</li>
+  </ul>
+
+ LISTES ORDONNEES:
+  <ol>
+      <li>un</li>
+      <li>deux</li>
+  </ol>
+
+ LISTES DESCRIPTIVES:
+  <dl>
+      <dt>nombres paires</dt>
+      <dd>2, 4, 6</dd>
+      <dt>nombres impaires</dt>
+      <dd>1, 3, 5</dd>
+      <dd>7, 9, 11</dd>
+     
+
+
+
+***** TABLEAU
+ <table> ** TABLEAU
+    <thead> **ELEMENTS D'ENTETE DU TABLEAU
+        <th>ELEMENT1</th>
+        <th>ELEMENT2</th>
+    </thead>
+    <tbody>
+        <tr> 
+            <td>article1_element1</td>
+            <td>article1_element2</td>
+        </tr>
+        <tr>
+            <td>article2_element1</td>
+            <td>article2_element2</td>
+        </tr>
+ </table>
+
+
+
+
+**** FORMS
+ L'élément HTML <form> représente une section d'un document
+ qui contient des contrôles interactifs permettant à un
+ utilisateur d'envoyer des données à un serveur web.
+
+
+**** STYLE
+  On peut styliser notre page directement dans fichier.html
+   Dans chaque balise:
+    <h1 style="color:blue; text-align:center;">WELCOME</h1>
+
+  On peut globaliser les styles de notre page 
+   Dans l'entete :
+    <head>
+      <style>
+          h1 {
+              color: blue;
+              text-align: center;
+          }
+       </style>
+     </head> 
+   
+   Ou creer un fichier.css :
+     h1{
+         color: blue;
+         text-align: center
+     }
+     LIER DANS fichier.html
+      Dans l'entete(head):
+      <head>
+         <link rel="stylesheet" href="style.css"
+      </head>
+
+**** <div> et <span>: l'élément de division du contenu
+ L'élément HTML <div> (qui signifie division du document)
+ est un conteneur générique qui permet d'organiser le contenu
+ sans représenter rien de particulier.
+ Il peut être utilisé afin de grouper d'autres éléments pour
+ leur appliquer un style (en utilisant les attributs class ou id)
+
+ id & class:
+   Un nom de class peut être utilisé par plusieurs éléments HTML,
+   tandis qu’un id ne doit être utilisé que par un élément HTML dans la page
+ 
+ Selecteur ou operation:
+   ul>li (on selectione les ul se trouvant dans li)
+   li<ul (sauf les ul)
+   
+
+**** STRUCTURATION
+ Les paragraphes:
+  <p>  signifie « Début du paragraphe » ;
+       <br />  saut a la ligne
+       <em> </em> et <strong>  mettre en valeur
+       <mark> marquer le texte
+       <hr> creent un trait dans le document
+       <span> comme les div </span>
+  </p>  signifie « Fin du paragraphe ».
+
+ Lien: 
+   <a href="https://openclassrooms.com">OpenClassrooms</a>
+  
+ vers ancre :
+  situer dans la meme page 
+   <h2 id="mon_ancre">Titre</h2>
+   <a href="#mon_ancre">Aller vers l'ancre</a>
+
+  situer dans une autre page
+   <a href="page2.html#mon_ancre">Aller vers l'ancre</a>
+   on peut rajouter:
+    title="infobulle"
+    
+    target="_blank" (nouvelle fenetre)
+
+ Image :
+   Les images doivent se trouver obligatoirement
+   à l'intérieur d'un paragraphe
+   <p>
+        <img src="HTML/html_codes/0_images/im1.jpg"
+          alt="python logo" title="le logo de python" />
+   </p>
+
+   Miniature cliquable :
+    <p>
+        <a href="im1.jpg"><img src="im1_mini.jpg" 
+          alt="python" title="click agrandir" /></a>
+
+ Figure :
+  Si vous faites de votre image une figure,l'image peut 
+  être située en-dehors d'un paragraphe. 
+  Si elle apporte une information : placez l'image dans
+  une figure.
+  <figure>
+      <img src="im1.jpg" alt="python" />
+      <img src="im2.jpg" alt="java" />
+      <figcaption>les langages de : </br>
+        programmation les plus populaires</figcaption>
+  </figure>
+
+  height et width ne doivent pas être utilisés pour
+  redimensionner les images dans le navigateurs. 
+
+
+
+
+     

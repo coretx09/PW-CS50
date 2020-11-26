@@ -1,0 +1,45 @@
+/* CSS DE CV */
+h1 {
+    color: rgb(250, 250, 244);
+   background-color: #339972;
+   padding-bottom: 15px;
+   padding-right: 5px;
+   margin: 0px;
+   text-align: right;
+   font-family: 'Shadows Into Light', cursive; 
+   border-radius: 30px;
+   text-shadow: 5px 5px 3px black;
+}
+h1:hover {
+    background-color: coral;
+    text-align: left    ;
+}
+#image {
+    
+    text-align: center;
+}
+     /* Paragraphes en italic */
+p {
+    font-style: italic;
+    font-size: 1rem;
+    
+}
+h2 {
+    color: tomato;
+    text-decoration: underline;
+}
+
+ul {
+    font-variant: small-caps;
+    color: tomato;
+}
+#experiences {
+    background-color: dimgrey;
+    box-shadow: 7px 12px 5px black ;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+body {
+    background-color: wheat;
+}

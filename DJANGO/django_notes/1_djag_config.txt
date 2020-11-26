@@ -1,0 +1,59 @@
+*****                    ECRIRE VOS VIEWS:
+
+Chaque VIEW est responsable de faire l’une des deux choses : renvoyer
+ un objet HttpResponse contenant le contenu de la page demandée ou
+ soulever une exception telle que Http404. Le reste est à vous.
+
+
+**CREATION D'UN PROJET
+
+Si c’est la première fois que vous utilisez Django, vous devrez vous 
+ occuper d’une configuration initiale. À savoir, vous devrez générer
+ automatiquement du code qui établit un projet Django – une collection 
+ de paramètres pour une instance de Django, y compris la configuration 
+ de base de données, les options spécifiques à Django et les paramètres 
+ spécifiques à l’application.
+
+                ** Création d’un environnement virtuel: **
+
+Sur Windows : ---> py -m venv env
+
+ Le deuxième argument est l’emplacement pour créer l’environnement 
+  virtuel. 
+En général, vous pouvez simplement créer cela dans votre projet et 
+  l’appeler .env
+  venv créera une installation python virtuelle dans le dossier.env
+selection interpreteur venv python installer
+
+
+---- Activation d’un environnement virtuel:
+
+(VSC) Exécuter terminal : créez un nouveau terminal intégré (Ctrl+Maj+') à partir de la palette de commandes, 
+qui crée un terminal et active automatiquement l’environnement virtuel en exécutant son script d’activation.
+
+              ** Projet mysite
+
+À partir de la ligne de commande, dans un répertoire où vous souhaitez
+ stocker votre code, puis exécutez la commande suivante :cd
+    ---> $ django-admin startproject mysite
+           "mysite(nom de projet)"
+
+---- Examinons ce que startproject a créé :
+        mysite/
+    manage.py
+    mysite/
+        __init__.py
+        settings.py (Paramètres/configuration pour ce projet Django)
+        urls.py (Les déclarations d’URL pour ce projet Django)
+        asgi.py
+        wsgi.py
+
+
+---- Serveur de developpement:
+      ---> $ python manage.py runserver
+
+
+
+       *** CREATION DE L'APPLICATION :
+Maintenant que votre environnement – un « projet » – est configuré, vous êtes
+ prêt à commencer à travailler.

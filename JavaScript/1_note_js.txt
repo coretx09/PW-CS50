@@ -1,0 +1,8 @@
+                    JavaScript JS
+
+C'est un langage de script léger, orienté objet,principalement 
+connu comme le langage de script des pages web.
+Mais il est aussi utilisé dans de nombreux environnements
+extérieurs aux navigateurs web tels que Node.js,
+Apache CouchDB voire Adobe Acrobat.
+Le code JavaScript est interprété ou compilé à la volée (JIT).

@@ -1,0 +1,176 @@
+****  Texte:
+ font-size:
+  indiquer une taille relative : « em (preferable) », en pourcentage,  ou
+  « ex », cette technique a l'avantage d'être plus souple.
+  Elle s'adapte plus facilement aux préférences de taille des visiteurs
+  
+ text-decoration:
+  underline  : souligné ;
+  line-through  : barré ;
+  overline : ligne au desus
+
+ text-align:
+  left  : le texte sera aligné à gauche (c'est le réglage par défaut) ;
+  center : le texte sera centré ;
+  right  : le texte sera aligné à droite ;
+  justify : prends toute la largeur possible
+
+  color: couleur de texte
+   
+
+**** Police : 
+  font-family:
+  font-style: italic
+  font-weight: bold (en gras)
+
+
+**** Fond 
+ background-color: couleur de Fond
+ background-image: url("image.jpg")
+ background-attachment: fixed
+ background-position: top right 
+ background:
+
+
+
+**** bordure et ombres(shadow)
+ border: 3px blue solid
+ border-radius: 25px
+ box-shadow: 6px 6px 0px blue
+
+
+
+**** Survol
+ :hover :
+   h2:hover {
+    on applique les changements
+    border-left: 3px solid blue
+   }
+
+  :active :
+    lors d'un click (utiliser sur des liens)
+
+  :focus :
+    element selectionne (utile dans les formulaire)
+
+  :visited :
+     lorsqu'un lien est consulter
+
+
+
+
+**** Model des boites(Box):
+
+  Tout en CSS est entoure d'une boite et la comprehension de ces
+  boites est essentielle pour pouvoir creer des mises en pages avec 
+  CSS ou pour aligner des elements avec d'autres elements
+
+  En HTML, la plupart des balises peuvent se ranger dans l'une
+  ou l'autre de deux catégories :
+
+  1. les balises en box inline :
+    c'est le cas par exemple des liens <a></a>, <img/>, 
+    inline se trouve obligatoirement à l'intérieur d'une balise block.
+   
+   box inline:
+    * la boite ne sautera pas sur une nouvelle ligne
+    * les proprietes width et height ne s'appliquent pas
+    * Le remplissage vertical, les marges et les bordures
+       s'appliqueront mais n'entraîneront pas l'éloignement
+       des autres boîtes en ligne de la boîte.
+    * Le remplissage horizontal, les marges et les bordures
+       s'appliqueront et entraîneront  l'éloignement des 
+       autres boîtes en ligne de la boîte.
+  
+
+
+  2. les balises en box block :
+    c'est le cas par exemple des paragraphes <p>, <h1>, 
+
+   box block: ------> 
+    * La boîte se cassera sur une nouvelle ligne.
+    * Contrairement à un inline, un bloc a des dimensions précises.
+       width : largeur (par defaut le block prend 100% de  la largeur dispo)
+       height : hauteur (px, %)
+       (min- , max-)(width, height) 
+    * Le remplissage, la marge et la bordure entraîneront
+       l'éloignement d'autres éléments de la boîte
+
+  NB: Le type de boîte appliqué à un élément est défini par
+   display : block (flex) et inline (inline-flex)
+      - inline (box inline)
+      - block (box block)
+      - inline-block (box block, mais ne casse pas sur une ligne)
+
+      -flex , inline-flex (Flexbox)
+
+
+
+  LES MARGES :
+      padding (marge intérieur du bloc)
+      margin (marge exterieur du bloc)
+    
+    La marge n'est pas comptée dans la taille réelle de la boite
+    bien sûr, cela affecte l'espace total que la boîte occupera
+    sur la page, mais uniquement l'espace à l'extérieur de la boîte
+    
+  CENTRER LES BLOCS :
+      Donnez une largeur au bloc (avec width)
+      margin: auto; 
+
+  COUPER UN BLOC : overflow
+    Quand le texte depasse la taille du bloc
+      overflow: scroll   (barres de défilement )
+      overflow: auto     (conseiller)
+       
+    Cesure des longs mots: word-wrap
+      word-wrap: break-word
+      
+
+
+
+**** FLEXBOX :
+ Flexbox est une méthode de mise en page selon un axe principal, 
+ permettant de disposer des éléments en ligne ou en colonne.
+ Les éléments se dilatent ou se rétractent pour occuper l'espace disponible.
+ (principalement pour accueillir à tous les types de dispositifs d’affichage
+ et de tailles d’écran)
+
+ UN CONTENEUR , DES ELEMENTS: (flex container, flex items)
+  Le principe de la mise en page avec Flexbox est simple :vous définissez
+  un conteneur, et à l'intérieur vous placez plusieurs éléments
+  Sur une même page web, vous pouvez sans problème avoir plusieurs conteneurs
+  Le conteneur est une balise HTML, et les éléments sont d'autres balises HTML à l'intérieur
+  
+  L’idée principale derrière la disposition flexible est de donner au conteneur
+  la possibilité de modifier la largeur /hauteur de ses elements (et l’ordre)
+  pour mieux remplir l’espace disponible
+
+
+ MODEL FLEX :
+  Lorsque les éléments sont disposés en boîtes flexibles,ils sont
+  disposés le long de deux axes:
+
+    main axis (L'axe principal) :
+      C'est l'axe de la direction dans laquelle sont disposés les éléments flex
+      (horizontal ou vertical)
+       main start (debut axe)
+       main end (fin axe)
+
+
+    cross axis (L'axe croisé) :
+      C'est l'axe perpendiculaire à l'axe principal
+       cross start
+       cross end
+
+
+    main size (taille principale) :
+      La largeur (width) ou la hauteur (height) d’un flex container
+      ou d’un flex item, selon main dimension.
+
+    cross size (taille croisée):
+     ...selon cross size
+
+    
+
+  

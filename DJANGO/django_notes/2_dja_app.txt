@@ -1,0 +1,132 @@
+**** CREATION APPLICATION DJANGO ( POLLS )
+
+Chaque application que vous écrivez dans Django se compose d’un package Python
+ qui suit une certaine convention. Django est livré avec un utilitaire qui
+ génère automatiquement la structure de base du répertoire d’une application,
+ de sorte que vous pouvez vous concentrer sur l’écriture de code plutôt que de
+ créer des répertoires.
+
+
+** Projets vs applications
+
+Un projet est une collection de configuration et d’applications pour un site Web 
+ particulier.
+
+Une application est une application Web qui fait quelque chose – par exemple,
+ un système Weblog, une base de données d’enregistrements publics ou
+ une petite application de sondage.
+
+Un projet peut contenir plusieurs applications.
+Une application peut être dans plusieurs projets.
+
+
+ *** 1.  Pour créer votre application, assurez-vous d’être dans le même répertoire
+ que cette commande et tapez cette commande :manage.py
+
+       --->$ python manage.py startapp polls
+Cela va créer un répertoire , qui est présenté comme ceci:polls
+ polls/
+    __init__.py
+    admin.py
+    apps.py
+    migrations/
+        __init__.py
+    models.py
+    tests.py
+    views.py
+
+*** PREMIERE VIEW :
+   2.Écrivons la première view. Ouvrez le fichier et y mettez le code Python
+    suivant :polls/views.py.....
+
+ --->    from django.http import HttpResponse
+ 
+
+         def index(request):
+             return HttpResponse("Hello, world. You're at the polls index.")
+
+C’est la vue la plus simple possible dans Django. Pour appeler la vue,
+ nous avons besoin de la carte à une URL - et pour cela nous avons besoin d’un URLconf.
+ 
+   3. CREER UN URLconf
+Pour créer un URLconf dans le répertoire des sondages, créez un fichier appelé
+Votre répertoire d’applications doit maintenant ressembler à :urls.py
+
+Dans le fichier, vous trouverez le code suivant :polls/urls.py ......
+
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]
+
+
+   4. POINTER LA RACINE URLconf sur le MODULE :
+Dans , ajoutez une importation pour et insérez une include() dans la liste,
+ de sorte que vous avez:
+:----> polls.urlsmysite/urls.pydjango.urls.includeurlpatterns .....
+
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('polls/', include('polls.urls')),
+    path('admin/', admin.site.urls),
+]
+
+La fonction include() permet le référencement d’autres URLconfs.
+
+
+
+      **** FONCTION path() :
+
+La fonction path() est passée quatre arguments, deux requis : et ,
+ et deux facultatifs : , et . À ce stade, il vaut la peine d’examiner
+ ce que ces arguments sont pour.routeviewkwargsname
+
+
+---> path() argument: route
+route est une chaîne qui contient un modèle d’URL
+ Lors du traitement d’une demande, Django commence au premier modèle et
+  fait son chemin vers le bas de la liste, en comparant l’URL demandée
+  par rapport à chaque modèle jusqu’à ce qu’il trouve un qui correspond.urlpatterns
+
+--->path() argument: view
+Lorsque Django trouve un modèle correspondant, il appelle la fonction de vue spécifiée
+ avec un objet HttpRequest comme premier argument et toutes les valeurs « capturées »
+ de l’itinéraire sous forme d’arguments de mots clés. 
+
+path() argument: kwargs
+Les arguments de mots clés arbitraires peuvent être transmis dans un
+ dictionnaire à l’affichage cible.
+
+path() argument: name
+Nommer votre URL vous permet de vous y référer sans ambiguïté depuis d’autres pays de Django,
+ en particulier à partir de modèles. Cette fonctionnalité puissante vous permet d’apporter
+ des modifications globales aux modèles d’URL de votre projet tout en ne touchant qu’un seul fichier.
+
+ 
+              --------> FLUX DE DEMANDE ET DE REPONSE <--------
+
+1.Creation projet: ---> $ django-admin startproject mysite .
+           "mysite(nom de projet)"
+
+2.Creation application: ---> $ python manage.py startapp polls
+
+3.Creation view: 
+
+4.Creation URLconf
+
+5.Pointage URLconf sur le module
+
+---- Serveur de developpement:
+      ---> $ python manage.py runserver
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+          **** CONFIGURATION BDD ****
+
+Il s’agit d’un module Python normal avec des variables au niveau du module
+ représentant les paramètres Django.mysite/settings.py
+
+Par défaut, la configuration utilise SQLite.
+
+Par défaut, INSTALLED_APPS contient les applications suivantes,
+ toutes accompagnées de Django :
+
+django.contrib.admin – Site d’administration. Vous l’utiliserez bien tôt.
+django.contrib.auth – Un système d’authentification.
+django.contrib.contenttypes – Cadre pour les types de contenu.
+django.contrib.sessions – Un cadre de session.
+django.contrib.messages – Un cadre de messagerie.
+django.contrib.staticfiles – Cadre de gestion des fichiers statiques.
+
+Certaines de ces applications utilisent au moins une table de base de données,
+ cependant, nous devons donc créer les tables dans la base de données avant
+ de pouvoir les utiliser. Pour ce faire, exécutez la commande suivante :
+
+         ----> $ python manage.py migrate
+
+La commande de migration examine le paramètre INSTALLED_APPS et crée les tables
+ de base de données nécessaires en fonction des paramètres de base de données
+ de votre fichier et des migrations de base de données expédiées avec l’application
+
+
+ 
+ ******CREATION DE MODELS :
+
+Un modèle est la source unique et définitive de vérité sur vos données. 
+
+Il contient les champs et les comportements essentiels des données que vous stockez.
+Django suit le principe DRY. L’objectif est de définir votre modèle de données
+ en un seul endroit et d’en tirer automatiquement des choses.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

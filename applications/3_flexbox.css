@@ -1,0 +1,29 @@
+
+
+.navig {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    ;
+    
+}
+
+ul{
+    
+    
+    display: inline-block;
+    list-style: none;
+    background-color: rgb(173, 26, 26);
+    
+    
+    
+    
+}
+
+.liste_menu > li{
+    background-color: darkgoldenrod;
+    padding: 0em;
+
+    
+
+}

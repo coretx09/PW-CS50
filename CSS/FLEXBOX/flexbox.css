@@ -1,0 +1,75 @@
+           /*GENERAL STYLES*/
+body{
+    margin: 0;
+    background: black ;
+    color: floralwhite;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body margin */
+.corps {
+    margin: 40px;
+    background-color: floralwhite;
+}
+
+            /*HEADER*/
+.header {
+    color: rgba(145, 38, 6, 0.527);
+    font-size: 40px;   /*la taille du texte depasse celle du cont.(.header)*/
+    background-color: darkslateblue;
+    padding-left: 20px;
+    height: 40px; /*taille du container*/ 
+}
+
+
+         /* NAVIGATION  */
+/*container nav --   gere la position et la facon
+                  que le container sera affiche */ 
+.liste_nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: darkgray;
+    height: 40px;
+}
+
+/*items nav-- gere la facon et la position des
+                       items dans le container*/
+.liste_nav  li {
+    margin-right: 40px; /*marge de droite entres les elmts ( li )*/
+}
+
+          /*WELCOM*/
+.bienvenu {
+    color: rgb(180, 65, 99);
+    text-align: center;
+    font-family: cursive ;
+    
+}
+
+
+           /*container*/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}   
+
+.container  div {
+    display: flex;
+    background-color: darkgrey;
+    width: 15em;
+    height: 15em;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+           /*footer*/
+

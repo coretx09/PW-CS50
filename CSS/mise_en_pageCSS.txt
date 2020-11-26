@@ -1,0 +1,162 @@
+*************     MISE EN PAGE CSS     ***********
+
+ Les techniques de mise en page CSS nous permettent de prendre des éléments
+ contenus dans une page Web et de contrôler où ils sont positionnés:
+  - Ecoulement normal
+  - La display propriete
+  - Flexbox
+  - Grid
+  - Float
+  - Position
+  - Disposition table
+  - Disposition a plusieurs colonnes 
+
+ Les principales méthodes de mise en page en CSS sont toutes les valeurs
+ de la display propriété. Cette propriété nous permet de changer la façon
+ dont quelque chose s'affiche par défaut.
+
+
+ 
+*****                Flexbox         ********
+
+ Flexbox est une méthode de mise en page selon un axe principal, 
+ permettant de disposer des éléments en ligne ou en colonne.
+ Les éléments se dilatent ou se rétractent pour occuper l'espace disponible.
+ (principalement pour accueillir à tous les types de dispositifs d’affichage
+ et de tailles d’écran)
+
+ UN CONTENEUR , DES ELEMENTS: (flex container, flex items)
+  Le principe de la mise en page avec Flexbox est simple :vous définissez
+  un conteneur, et à l'intérieur vous placez plusieurs éléments
+  Sur une même page web, vous pouvez sans problème avoir plusieurs conteneurs
+  Le conteneur est une balise HTML, et les éléments sont d'autres balises HTML à l'intérieur
+  
+  L’idée principale derrière la disposition flexible est de donner au conteneur
+  la possibilité de modifier la largeur /hauteur de ses elements (et l’ordre)
+  pour mieux remplir l’espace disponible
+
+
+ ***** MODEL FLEX :
+  Lorsque les éléments sont disposés en boîtes flexibles,ils sont
+  disposés le long de deux axes:
+
+    main axis (L'axe principal) :
+      C'est l'axe de la direction dans laquelle sont disposés les éléments flex
+      (horizontal ou vertical)
+       main start (debut axe)
+       main end (fin axe)
+
+
+    cross axis (L'axe croisé) :
+      C'est l'axe perpendiculaire à l'axe principal
+       cross start
+       cross end
+
+
+    main size (taille principale) :
+      La largeur (width) ou la hauteur (height) d’un flex container
+      ou d’un flex item, selon main dimension.
+
+    cross size (taille croisée):
+     ...selon cross size
+
+ ***** PROPRIETES DU PARENT (conteneur flexible):
+
+  AFFICHER :
+    Cela définit un conteneur flexible.
+    Il permet un contexte flexible pour tous ses enfants directs.
+    
+    .container {
+      display: flex
+     }
+
+  FLEX-DIRECTION :
+    Cela établit l'axe principal(main axis), définissant ainsi la 
+    direction dans laquelle les éléments flexibles sont placés
+    dans le conteneur flexible.
+
+    .container {
+      flex-direction: row | row-reverse | column | column-reverse;
+    } 
+
+    row (par defaut): sur une lige ;
+    column : organisés sur une colonne ;
+    row-reverse : organisés sur une ligne, mais en ordre inversé ;
+    column-reverse : organisés sur une colonne, mais en ordre inversé.
+
+
+  FLEX-WRAP :
+    Par défaut, les blocs essaient de rester sur la même ligne s'ils 
+    n'ont pas la place (ce qui peut provoquer des bugs de design, parfois)
+    Si vous voulez, vous pouvez demander à ce que les blocs aillent à la 
+    ligne lorsqu'ils n'ont plus la place
+
+    .container {
+        flex-wrap: nowrap | wrap | wrap-reverse;
+    }
+
+    nowrap (par défaut): tous les éléments flexibles seront sur une seule ligne
+    wrap: les éléments flex seront enroulés sur plusieurs lignes, de haut en bas.
+    wrap-reverse: les éléments flex seront enroulés sur plusieurs lignes de bas en haut.
+
+  
+  FLEX-FLOW :
+    Il s'agit d'un raccourci pour les propriétés flex-directionet et flex-wrap
+    
+    .container {
+        flex-flow: row nowrap  || valeur par defaut
+    }
+
+
+  JUSTIFY-CONTENT :
+     Ceci définit l'alignement le long de l'axe principal. Il aide à répartir l'espace 
+     libre supplémentaire restant lorsque tous les éléments flexibles d'une ligne sont 
+     rigides ou flexibles mais ont atteint leur taille maximale.
+     Il exerce également un certain contrôle sur l'alignement des éléments lorsqu'ils dépassent la ligne.
+
+     .container {
+          justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+     }
+
+     flex-start : alignés au début ;
+     flex-end : alignés à la fin ;
+     center : alignés au centre ;
+     baseline : alignés sur la ligne de base (semblable à flex-start).
+     space-between: les articles sont uniformément répartis dans la ligne
+                 premier élément est sur la ligne de départ, le dernier élément sur la ligne de fin
+     space-around: les éléments sont répartis uniformément dans la ligne avec un espace égal autour d'eux.
+     space-evenly: les éléments sont distribués de sorte que l'espacement entre deux éléments (et l'espace sur les bords) soit égal.
+
+
+  ALIGN-ITEMS :
+    Ceci definit l'alignement le long de l'axe croisé
+
+
+  ALIGN-CONTENT :
+     Cela aligne les lignes d'un conteneur flexible à l'intérieur lorsqu'il y a un espace supplémentaire
+     dans l'axe transversal, de la même manière que l' justify-content alignement des éléments individuels dans l'axe principal.
+     S'il y a plusieurs lignes, on peut indiquer comment les lignes doivent se répartir entre elles avec align-content  .
+
+
+  DIMENSION FLEXIBLE :
+     Contrôler la proportion d'éléments flexibles d'espace occupée par rapport aux autres éléments 
+      
+      .container {
+        flex: 1;
+      }
+     valeur de proportion sans unite qui dicte la quantite d'espace  disponible le long de l'axe principale que chaque elements
+     flexible occupera par rapport aux autres. valeur 1 signifie qu'ils occuperont tous une quantite egale de l'espace libre 
+
+      .container:nth-of-type(3) {
+        flex: 2;
+      }
+     le troisieme element occupe deux fois plus de largeur disponible
+
+
+  FLEX :
+   flex est une propriété abrégée qui peut spécifier jusqu'à trois valeurs différentes:
+
+
+  
+
+

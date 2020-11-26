@@ -1,0 +1,61 @@
+      ****** GITHUB ***********
+
+***********    CREER UN REFERENTIEL 
+
+ Pour mettre votre projet sur GitHub, vous devrez créer un référentiel dans
+ lequel il pourra vivre.
+
+
+ ____ Cliquez sur le + dans le coin supérieur droit, puis cliquez sur
+  « Nouveau référentiel »
+
+ ____ Créer un nom de référentiel qui décrit votre projet
+  
+
+
+**********    CLONER UN REFERENTIEL
+
+  Lorsque vous clonez un référentiel, vous copiez le référentiel de GitHub sur votre machine locale.
+
+  Un commit est comme un instantané de tous les fichiers de votre projet à un moment donné.
+  Les fichiers README sont un excellent endroit pour décrire votre projet plus en déta
+
+ ____ Cliquez sur le bouton vert « Clone ou téléchargement » sur la
+ page de votre référentiel, puis copiez l’URL qui apparaît. Si vous
+ n’avez pas créé de README, ce lien apparaîtra en haut de la page
+ dans la section « Installation rapide ».
+
+
+____ git clone : ---> git clone <repository url>
+
+Dans votre terminal, exécutez . Cela permettra de télécharger
+ le référentiel sur votre ordinateur. Si vous n’avez pas créé un README,
+ vous obtiendrez l’avertissement: C’est normal, et il n’y a pas besoin
+ de s’inquiéter à ce sujet.  ---> git clone <repository url>
+ You appear to have cloned into an empty repository.
+
+____ ls : 
+
+Vous devriez voir le nom du référentiel que vous venez de cloner.--> ls
+ Exécutez pour modifier le répertoire dans ce dossier. --> cd <repository name>
+
+
+____ cd : ---> cd <repository name>
+
+Exécutez pour modifier le répertoire dans ce dossier.cd <repository name>
+
+
+____  touch :  ---> touch <new file name>
+
+Vous pouvez également ouvrir le dossier dans votre éditeur de texte et
+ ajouter manuellement de nouveaux fichiers. ---> touch <new file name>
+
+
+____   git add : ---> git add <new file name>
+
+Maintenant, pour faire savoir à Git qu’il doit suivre le nouveau fichier
+ que vous avez fait, exécutez pour suivre ce fichier spécifique, ou pour suivre
+ tous les fichiers dans ce répertoire.git add <new file name>git add .
+
+
+
