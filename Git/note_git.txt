@@ -1,6 +1,16 @@
       ****** GITHUB ***********
 
-***********    CREER UN REFERENTIEL 
+COMMANDE BASE TERMINAL :
+
+  -- ls:  Affiche les fichiers du repertoire, ls-a (fichiers caches)
+
+  -- cd <repository name>:   Acceder a un repertoire
+     cd .. :   Pour remonter au répertoire parent
+
+  -- touch <new file name>:  Creer un nouveau fichier
+
+                
+*****  CREER UN REFERENTIEL: 
 
  Pour mettre votre projet sur GitHub, vous devrez créer un référentiel dans
  lequel il pourra vivre.
@@ -13,11 +23,10 @@
   
 
 
-**********    CLONER UN REFERENTIEL
+*****    CLONER UN REFERENTIEL:
 
   Lorsque vous clonez un référentiel, vous copiez le référentiel de GitHub sur votre machine locale.
 
-  Un commit est comme un instantané de tous les fichiers de votre projet à un moment donné.
   Les fichiers README sont un excellent endroit pour décrire votre projet plus en déta
 
  ____ Cliquez sur le bouton vert « Clone ou téléchargement » sur la
@@ -26,36 +35,76 @@
  dans la section « Installation rapide ».
 
 
-____ git clone : ---> git clone <repository url>
+ ---> git clone <repository url>
 
-Dans votre terminal, exécutez . Cela permettra de télécharger
+ Dans votre terminal, exécutez . Cela permettra de télécharger
  le référentiel sur votre ordinateur. Si vous n’avez pas créé un README,
  vous obtiendrez l’avertissement: C’est normal, et il n’y a pas besoin
  de s’inquiéter à ce sujet.  ---> git clone <repository url>
  You appear to have cloned into an empty repository.
 
-____ ls : 
-
-Vous devriez voir le nom du référentiel que vous venez de cloner.--> ls
- Exécutez pour modifier le répertoire dans ce dossier. --> cd <repository name>
-
-
-____ cd : ---> cd <repository name>
-
-Exécutez pour modifier le répertoire dans ce dossier.cd <repository name>
-
-
-____  touch :  ---> touch <new file name>
-
-Vous pouvez également ouvrir le dossier dans votre éditeur de texte et
- ajouter manuellement de nouveaux fichiers. ---> touch <new file name>
-
-
-____   git add : ---> git add <new file name>
-
-Maintenant, pour faire savoir à Git qu’il doit suivre le nouveau fichier
- que vous avez fait, exécutez pour suivre ce fichier spécifique, ou pour suivre
- tous les fichiers dans ce répertoire.git add <new file name>git add .
 
 
 
+*****  AJOUTER NOUVEAUX DOSSIERS:
+
+ ---> git add <new file name>
+
+ Maintenant, pour faire savoir à Git qu’il doit suivre le nouveau fichier
+ que vous avez fait, exécutez   
+    git add <new file name> :  pour suivre ce fichier spécifique,
+    git add .  :  pour suivre tous les fichiers dans ce répertoire
+
+
+****  COMMIT:
+
+ Un commit est comme un instantané de tous les fichiers de votre projet à un moment donné.
+ Valider ces modifications :
+
+ ( ---> git add <new file name> )
+ Si vous modifiez un fichier après avoir exécuté git add, sans valider  vous devez exécuter git add
+ a nouveau pour mettre en scène la dernière version du fichier:
+
+ --->    git commit -m "some message"
+ Message décrit les modifications que vous venez d'effectuer.
+
+ --->    git status
+ Pour voir comment notre code se compare au code sur le référentiel distant.
+
+ --->    git push 
+ Pour publier nos commits locaux sur Github.
+
+ --->    git commit -am "some message"
+ Cette commande validera toutes les modifications que vous avez apportées.
+ Si vous avez seulement changé les fichiers existants et non créé de nouveaux
+
+ --->    git pull
+ Extraire toutes les modifications distantes de votre référentiel.
+
+ --->    git log 
+ Donne un historique de tous vos commits sur ce référentiel. 
+
+ --->    git reset --hard <commit>
+ Rétablit votre code exactement comme il était après la validation spécifiée
+
+ --->    git reset --hard origin/master
+ Rétablit votre code à la version actuellement stockée en ligne sur Github.
+
+
+*****  BRANCHING :
+
+ Le branchement est une méthode pour passer dans une nouvelle direction lors
+ de la création d'une nouvelle fonctionnalité, et ne combiner cette nouvelle 
+ fonctionnalité qu'avec la partie principale de votre code, ou la branche 
+ principale, une fois que vous avez terminé.
+
+ --->    git branch
+ Affiche le branch sur lequel vous travaillez
+
+ --->    git checkout -b <new branch name>
+ Cree un new branch
+
+ --->    git checkout <branch name>
+ Basculez entre les branches 
+
+ --->    git merge <other branch name>
