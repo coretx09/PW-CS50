@@ -40,8 +40,13 @@
 
 
 
-**** Survol
- :hover :
+**** Pseudo-classe :
+
+  sélecteur:pseudo-classe {
+    propriété: valeur;
+  }
+
+  :hover : (Survol)
    h2:hover {
     on applique les changements
     border-left: 3px solid blue
@@ -54,7 +59,15 @@
     element selectionne (utile dans les formulaire)
 
   :visited :
-     lorsqu'un lien est consulter
+    lorsqu'un lien est consulter
+
+  :nth-child(1) :
+    Permettra de cibler un élément qui est le premier fils de son parent.
+    (2n)-- tous les elements pairs 
+    (2n+1)-- tous les elements impairs
+
+  :first-child  :
+    Synonyme à l'exemple précédent.
 
 
 
