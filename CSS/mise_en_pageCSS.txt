@@ -153,8 +153,20 @@
      le troisieme element occupe deux fois plus de largeur disponible
 
 
+   ORDER :
+     Sans changer le code HTML, nous pouvons modifier l'ordre des éléments en CSS grâce à la propriété order 
+
+     .container:nth-child(1) {
+       order: 3
+     }
+     Si je dis que le premier élément sera placé en 3e position
+
+ 
   FLEX :
    flex est une propriété abrégée qui peut spécifier jusqu'à trois valeurs différentes:
+   - flex-grow (capacite a grosir)
+   - flex-shrink (capacite a maigrir)
+   - flex-basis (taille par defaut)
 
 
   
