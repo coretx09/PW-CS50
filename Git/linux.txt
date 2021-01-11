@@ -1,0 +1,55 @@
+COMMANDE BASE TERMINAL :
+
+  -- ls:  Affiche les fichiers du repertoire, ls-a (fichiers caches)
+
+  -- cd <repository name>:   Acceder a un repertoire
+     cd .. :   Pour remonter au répertoire parent
+     cd - : revenir en arriere
+
+  -- touch <new file name>:  Creer un nouveau fichier
+
+  -- mkdir <new repository name>:  creer un nouveau dossier 
+
+  -- mv <name> <new name>:  renommer
+
+  -- rmdir <name>: supprimer
+
+
+
+ Filesystem Hierarchy Standard ( FHS ) :
+
+  /bin/: programmes de base
+  /boot/: Noyau Kali Linux et autres fichiers requis pour son processus de démarrage précoce
+  /dev/: fichiers de l'appareil
+  /etc/: fichiers de configuration
+  /home/: fichiers personnels de l'utilisateur
+  /lib/: bibliothèques de base
+  /media/*: points de montage pour les périphériques amovibles (CD-ROM, clés USB, etc.)
+  /mnt/: point de montage temporaire
+  /opt/: applications supplémentaires fournies par des tiers
+  /root/: fichiers personnels de l'administrateur (root)
+  /run/: données d'exécution volatiles qui ne persistent pas lors des redémarrages (non encore incluses dans le FHS)
+  /sbin/: programmes système
+  /srv/: données utilisées par les serveurs hébergés sur ce système
+  /tmp/: fichiers temporaires (ce répertoire est souvent vidé au démarrage)
+  /usr/: Applications (ce répertoire est encore subdivisé en bin, sbin, libselon la même logique que dans le répertoire racine)
+     /usr/share/contient des données indépendantes de l' architecture
+     /usr/local/répertoire est destiné à être utilisé par l'administrateur pour installer manuellement des applications sans écraser les fichiers gérés par le système d'empaquetage ( dpkg).
+
+  /proc/et /sys/: sont spécifiques au noyau Linux (et ne font pas partie du FHS). Ils sont utilisés par le noyau pour exporter des données vers l'espace utilisateur.   
+
+
+
+ User’s Home Directory : ( ~ ou /home/user/ )
+
+  Les fichiers de configuration d'application sont souvent stockés directement sous votre répertoire personnel, mais les noms de fichiers commencent généralement par un point
+  ( -- ls -a: pour affichers les dossiers caches)
+  ~/.config: fichiers de configuration
+  ~/.cache:  fichiers de caches
+  ~/.local:  fichiers de données d'application 
+  ~/Desktop: les systèmes non configures 
+
+
+
+ Useful Commands
+
