@@ -9,6 +9,12 @@ COMMANDE BASE TERMINAL :
 
   -- touch <new file name>:  Creer un nouveau fichier
 
+  -- mkdir <new repository name>:  creer un nouveau dossier 
+
+  -- mv <name> <new name>:  renommer
+
+  -- rmdir <name>: supprimer 
+
                 
 *****  CREER UN REFERENTIEL: 
 
