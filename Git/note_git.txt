@@ -13,7 +13,7 @@ COMMANDE BASE TERMINAL :
 
   -- mv <name> <new name>:  renommer
 
-  -- rmdir <name>: supprimer 
+  -- rmdir <name>: supprimer  
 
                 
 *****  CREER UN REFERENTIEL: 

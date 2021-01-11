@@ -3,7 +3,7 @@ COMMANDE BASE TERMINAL :
   -- ls:  Affiche les fichiers du repertoire, ls-a (fichiers caches)
 
   -- cd <repository name>:   Acceder a un repertoire
-     cd .. :   Pour remonter au répertoire parent
+     cd ..:   Pour remonter au répertoire parent
      cd - : revenir en arriere
 
   -- touch <new file name>:  Creer un nouveau fichier
@@ -12,7 +12,11 @@ COMMANDE BASE TERMINAL :
 
   -- mv <name> <new name>:  renommer
 
-  -- rmdir <name>: supprimer
+  -- rmdir <name>: supprimer directory 
+
+  -- rm <name>: supprimer file 
+
+  -- cp source-file target-file : copy
 
 
 
@@ -52,4 +56,36 @@ COMMANDE BASE TERMINAL :
 
 
  Useful Commands
+  
+  --echo
+  --cat :concatenate ou afficher le fichier
+  --find directory criteria(criterion is -name filename or + *):  localiser un fichier ou un répertoire
+  --free -m :affiche des informations sur la mémoire
+  --df -h :indique l'espace disque disponible sur chacun des disques montés dans le système de fichiers
+  --id : affiche l'identité de l'utilisateur exécutant la session ainsi que la liste des groupes auxquels il appartient.
+  --uname -a :renvoie une seule ligne documentant le nom du noyau ( Linux)
+  --dmesg :revoir les journaux du noyau
+  --journalctl :afficher tous les journaux disponibles
+  --lspci (lister les périphériques PCI) et lsusb(usb), lsdev
+  Processus 
+   Un processus est une instance en cours d'exécution d'un programme, qui nécessite de la mémoire pour stocker à la fois le programme lui-même et ses données d'exploitation.
+   --ps(afficher les processus)
+   --kill(tuer les processus)
+   --fg(mettre le processus en arrière-plan au premier plan)
+   --jobs(afficher les processus en arrière-plan)
+
+
+
+ APT 
+  
+  apt update: mettre à jour sa base de données des packages disponibles
+  apt upgrade
+  apt install package
+  apt remove package
+  apt purge package : Cela supprimera complètement le paquet et toutes les données utilisateur supprimera également les dépendances
+  apt-cache search keyword(apt search) 
+  
+
+
+
 
