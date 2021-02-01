@@ -20,6 +20,7 @@ mot = 'sauvet007'
  e.g: x += 1 ou x = x + 1 
 
  Les nombres, les chaînes de caractères,  et les tuple sont des types immuables
+ 
  Leurs contenus ne peuvent pas être modifié après sa création; ils peuvent donc être
  utilisé comme clé de dictionnaire ou comme élément d'un autre ensemble.
 """
