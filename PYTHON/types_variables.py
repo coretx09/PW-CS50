@@ -20,7 +20,7 @@ mot = 'sauvet007'
  e.g: x += 1 ou x = x + 1 
 
  Les nombres, les chaînes de caractères,  et les tuple sont des types immuables
- 
+
  Leurs contenus ne peuvent pas être modifié après sa création; ils peuvent donc être
  utilisé comme clé de dictionnaire ou comme élément d'un autre ensemble.
 """
@@ -91,3 +91,11 @@ print(s)
 ss = {34, True, True, 3.5, "34"}
 print(ss)
 print(len(ss))
+
+# module 
+'''On appele la fonction minlist() et maxlist() depuis le module test 
+'''
+from fonctions import maxlist
+
+maliste = [45, 654, 87, 542, 0]
+maxlist(maliste)
