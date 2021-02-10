@@ -24,19 +24,23 @@
 
  ATTRIBUTS:
    Les attributs sont les variables appartenant à une classe
- ATTRIBUTS D'INSTANCE :
+  ATTRIBUTS D'INSTANCE :
    La valeur d'un attribut d'instance est spécifique à une instance particulière de la classe.
    La fonction __init __ () pour attribuer des valeurs aux propriétés de l'objet ou à d'autres opérations nécessaires
    lors de la création de l'objet
    Les propriétés que tous les objets doivent avoir sont définies dans la méthode appelée .__init__()
- ATTRIBUTS DE CLASS :
+  ATTRIBUTS DE CLASS :
     les attributs de classe sont des attributs qui ont la même valeur pour toutes les instances de classe.
     Les attributs de classe sont définis directement sous la première ligne du nom de classe(en dehors de .__init__() ) 
     en attribuant une valeur à un nom de variable 
   Les attributs sont toujours publics et sont accessibles à l'aide de l'opérateur point (.). Exemple: Myclass.Myattribute
   
  METHODES:
-  Les méthodes sont des fonctions définies dans une classe.
+  Les méthodes sont des fonctions qui sont associées de manière explicite à une classe.
+  Elles ont comme particularité un accès privilégié aux données(attributs) de la classe elle-même.
+  A part le premier paramètre qui doit de préférence s’appeler self, la syntaxe de définition d’une méthode
+  ressemble en tout point à celle d’une fonction
+
 
  La création d'une nouvelle classe crée un nouveau type d'objet, permettant de créer de nouvelles instances de ce type
 '''
