@@ -56,4 +56,6 @@
 
   Lorsqu'une nouvelle instance de classe est créée, l'instance est automatiquement passée au selfparamètre 
   dans .__init__()   afin que de nouveaux attributs puissent être définis sur l'objet.
+
+  Chaque attribut d’une instance de classe est inséré dans un dictionnaire appelé __dict__
 '''

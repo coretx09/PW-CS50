@@ -63,4 +63,4 @@ dubai_moscou.add_passager('Galina')
 del dubai_moscou.liste[0]
 dubai_moscou.liste_passager('n')
 
-
+print(moscou_dubai.__dict__)
