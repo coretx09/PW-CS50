@@ -84,8 +84,13 @@ COMMANDE BASE TERMINAL :
   apt remove package
   apt purge package : Cela supprimera complètement le paquet et toutes les données utilisateur supprimera également les dépendances
   apt-cache search keyword(apt search) 
-  
+ 
 
+ VIDER CACHE 
+  free -h && sudo sysctl vm.drop_caches=3 && free -h
+  
+  WIND: tapez Nettoyage de disque
+  NAV: cache navigateur 
 
 
 
