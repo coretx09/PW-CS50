@@ -64,4 +64,4 @@ del dubai_moscou.liste[0]
 dubai_moscou.liste_passager('n')
 
 print(moscou_dubai.__dict__)
-print(Vol.__DO)
+
