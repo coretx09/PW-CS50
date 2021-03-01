@@ -29,11 +29,17 @@
    La fonction __init __ () pour attribuer des valeurs aux propriétés de l'objet ou à d'autres opérations nécessaires
    lors de la création de l'objet
    Les propriétés que tous les objets doivent avoir sont définies dans la méthode appelée .__init__()
-  ATTRIBUTS DE CLASS :
+
+  ATTRIBUTS DE CLASS ou ATTRIBUTS STATIC :
     les attributs de classe sont des attributs qui ont la même valeur pour toutes les instances de classe.
     Les attributs de classe sont définis directement sous la première ligne du nom de classe(en dehors de .__init__() ) 
     en attribuant une valeur à un nom de variable 
   Les attributs sont toujours publics et sont accessibles à l'aide de l'opérateur point (.). Exemple: Myclass.Myattribute
+
+  ATTRIBUTS SPECIALS :
+   SPECIAL ATTRIBUTS in Python  start and end with the double underscores.
+   Ils sont créés de manière implicite lors de la création d’une instance. 
+   Ils contiennent des informations sur l’instance, for example: __dict__, __doc__, 
   
  METHODES:
   Les méthodes sont des fonctions qui sont associées de manière explicite à une classe.
@@ -68,6 +74,7 @@
 
   MAGIC METHODS OR DUNDER:
     Magic methods in Python are the special methods that start and end with the double underscores.
+    for example: __init__, __str__ ......
 
 
  CLASS METHODS :
