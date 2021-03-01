@@ -59,3 +59,28 @@
 
   Chaque attribut d’une instance de classe est inséré dans un dictionnaire appelé __dict__
 '''
+
+#METHODES
+'''
+ INSTANCE METHODS:
+  Les méthodes régulières (instance) ont besoin d'une instance de classe et peuvent accéder à l'instance via self.
+  Ils peuvent lire et modifier librement l'état d'un objet.
+
+  MAGIC METHODS OR DUNDER:
+    Magic methods in Python are the special methods that start and end with the double underscores.
+
+
+ CLASS METHODS :
+  Les méthodes de classe, marquées du @classmethod décorateur, n'ont pas besoin d'une instance de classe.
+  Ils ne peuvent pas accéder à l'instance (self) mais ils ont accès à la classe elle-même via cls.
+  les méthodes de classe peuvent modifier l'état de classe qui s'applique à toutes les instances de la classe
+
+ STATIC METHODS:
+  Les méthodes statiques, marquées du @staticmethod décorateur, n'ont pas accès à cls ou self.
+  Elles fonctionnent comme des fonctions normales mais appartiennent à l'espace de noms de la classe.
+  Par conséquent, une méthode statique ne peut ni modifier l'état de l'objet ni l'état de la classe.
+  Les méthodes statiques sont limitées dans les données auxquelles elles peuvent accéder - 
+  et elles constituent principalement un moyen d'espacer les noms de vos méthodes
+
+ 
+'''
