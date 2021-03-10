@@ -1,10 +1,12 @@
 #   CLASS
 """ Les classes fournissent un moyen de regrouper les données et les fonctionnalités.
+             Les attributs sont les variables appartenant à une classe
 
  Class objects:
   Ils prennent en charge deux types d'opérations: attribute references and instantiation.
    -ATTRIBUTE REFERENCE:
       Ils utilisent la syntaxe standard utilisée pour toutes les références d'attributs en Python: obj.name [name=class attribut OR methods]
+      Il existe deux types de name attributes valides: data attributes(instance variable) and methods
 
    -INSTANCITION:
      Class instantiation uses function notation, 
@@ -12,7 +14,6 @@
 
  Instance objects:
   Les seules opérations comprises par les objets d'instance sont: attributes references (obj.name)
-  Il existe deux types de name attributes valides: data attributes(instance variable) and methods
 
  
       
@@ -20,10 +21,10 @@
 
 class Vol: # class object = Vol
 
-    numero_vol = 0 #class variable 
+    numero_vol = 0 #class attribute(variable )
 
     def __init__(self, destination, capacity):  # Dunder or special method 
-        self.destination = destination # instance variable 
+        self.destination = destination # instance attribute (variable)
         self.capacity = capacity
         self.liste = []
         self.numero_passager = 0
