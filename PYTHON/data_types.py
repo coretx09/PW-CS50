@@ -19,7 +19,7 @@ mot = 'sauvet007'
  autre variable du même type qui intègrera la modification. 
  e.g: x += 1 ou x = x + 1 
 
- Les nombres, les chaînes de caractères,  et les tuple sont des types immuables
+ Les nombres, les chaînes de caractères,  et les tuple sont des types immutables
 
  Leurs contenus ne peuvent pas être modifié après sa création; ils peuvent donc être
  utilisé comme clé de dictionnaire ou comme élément d'un autre ensemble.
@@ -33,8 +33,20 @@ mot = 'sauvet007'
 """
 
 
-#TYPE DE SEQUENCES: list, tuple, range.
-  #List
+#                               DATA MODEL
+
+
+#ELLIPSIS types: Numbers(integer, booleans, float, complex)
+'''This type has a single value. There is a single object with this value. 
+This object is accessed through the literal ... or the built-in name Ellipsis. Its truth value is true.
+'''
+
+#TYPE DE SEQUENCES: string, list, tuple, range.
+'''These represent finite ordered sets indexed by non-negative numbers. 
+The built-in function len() returns the number of items of a sequence.
+'''
+
+  #List (MUTABLE)
 """Les éléments de liste sont ordonnés(INDEX), modifiables et autorisent
  les valeurs en double.
  Les listes sont créées à l'aide de crochets
@@ -46,7 +58,7 @@ print(names[2])
 names.append("Gims")
 print(names)
 
-  #Tuple
+  #Tuple (IMMUTABLE)
 """Les éléments de tuple sont ordonnés, inchangeables et autorisent les valeurs en double. 
  Un tuple apparaît comme une liste d’objets de tout type comprise entre parenthèses
  et séparés par des virgules.
@@ -60,7 +72,7 @@ x, y, z = cordonnees
 
 
 #TYPE DE MAPPAGE:
-#Dictionnary
+#Dictionnary(MUTABLE)
 """Les éléments du dictionnaire ne sont pas ordonnés, modifiables
  et n'autorisent pas les doublons
   sont présentés dans des paires clé: valeur et peuvent être
@@ -69,8 +81,8 @@ x, y, z = cordonnees
 houses = {"Harry":  "nice", "Ron": "horrible"}
 
 
-#DEFINIR LES TYPES
-#Set
+#set TYPES
+ #Set
 """ Les éléments d'ensemble ne sont pas ordonnés, inchangeables (mais on peut ajouter les elmts)
  et n'autorisent pas les valeurs en double.
 
@@ -99,3 +111,26 @@ from fonctions import maxlist
 
 maliste = [45, 654, 87, 542, 0]
 maxlist(maliste)
+
+
+#CALLABLE types:
+""" Voici les types auxquels l'opération d'appel de fonction peut etre applique 
+     - Les fonctions définies par l'utilisateur (User-defined functions) ,
+     - les fonctions intégrées (Built-in functions) e.g: len()......, 
+     - Les méthodes des objets intégrés (Built-in methods), e.g: alist.append() [alist= list object, append()=Built-in methods ]
+     - Class objects,
+     - Instance methods
+     - Et tous les objets ayant une __call__() méthode sont appelables.
+       - Class instances arbitraires peuvent être rendues appelables en définissant une __call__()méthode dans leur classe.
+
+ La définition de fonction n'exécute pas le corps de la fonction; ceci n'est exécuté que lorsque la fonction est appelée.
+"""
+
+ #User-defined functions (fonctions définies par l'utilisateur): 
+"""Un objet fonction défini par l'utilisateur est créé par une définition de fonction(def fonctions(attributes).....)
+  Ils ont aussi des attributes speciales"""
+
+ #Instance methods
+  
+      
+  

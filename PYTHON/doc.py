@@ -33,5 +33,5 @@ __*   class private names
 '''
 
 # Escape Sequence (\)
-phrase = "m'oi je suis \\\\ //"
+phrase = "m'oi  je suis \\\\ //"
 print(phrase)

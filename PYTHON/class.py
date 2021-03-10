@@ -1,9 +1,29 @@
-class Vol:
+#   CLASS
+""" Les classes fournissent un moyen de regrouper les données et les fonctionnalités.
 
-    numero_vol = 0
+ Class objects:
+  Ils prennent en charge deux types d'opérations: attribute references and instantiation.
+   -ATTRIBUTE REFERENCE:
+      Ils utilisent la syntaxe standard utilisée pour toutes les références d'attributs en Python: obj.name [name=class attribut OR methods]
 
-    def __init__(self, destination, capacity):
-        self.destination = destination
+   -INSTANCITION:
+     Class instantiation uses function notation, 
+      instanceObject = Object(...)
+
+ Instance objects:
+  Les seules opérations comprises par les objets d'instance sont: attributes references (obj.name)
+  Il existe deux types de name attributes valides: data attributes(instance variable) and methods
+
+ 
+      
+"""
+
+class Vol: # class object = Vol
+
+    numero_vol = 0 #class variable 
+
+    def __init__(self, destination, capacity):  # Dunder or special method 
+        self.destination = destination # instance variable 
         self.capacity = capacity
         self.liste = []
         self.numero_passager = 0
@@ -50,18 +70,20 @@ class Vol:
 
 
 
-moscou_dubai = Vol('Dubai', 2)
-moscou_dubai.add_passager('poups')
+moscou_dubai = Vol('Dubai', 2) # instancation, instance object = moscou_dubai 
+moscou_dubai.add_passager('poups') # attribute reference , name attribute: method 
 moscou_dubai.vol_infos()
 moscou_dubai.add_passager('Kivi')
 moscou_dubai.add_passager('zaika')
 moscou_dubai.liste_passager('u')
 
-dubai_moscou = Vol('Moscou', 5)
+dubai_moscou = Vol('Moscou', 5) # instancation, instance object = dubai_moscou  
 dubai_moscou.vol_infos()
 dubai_moscou.add_passager('Galina')
 del dubai_moscou.liste[0]
 dubai_moscou.liste_passager('n')
 
-print(moscou_dubai.__dict__)
+print(moscou_dubai.__dict__) # attribute reference , name attribute: data attribute(special attribut)
 print(moscou_dubai.__doc__)
+
+print(Vol.numero_vol) # attribute reference, name attribute: data attribute(instance variable)

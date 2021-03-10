@@ -1,10 +1,10 @@
 #         SPECIALS ATTRIBUTS
 '''
  SPECIAL ATTRIBUTS in Python  start and end with the double underscores.
-   Ils sont créés de manière implicite lors de la création d’une classe. 
-   Ils contiennent des informations sur l'instance.
+   Ils sont créés de manière implicite lors de la création d’une classe ou d'une fonction. 
+   Ils contiennent des informations sur l'instance ou sur la fonction.
 '''
-
+# Class Special attributes
 class  Telephone:
     '''fd'''
     date= 5
@@ -35,3 +35,5 @@ print(samsung.__class__.__name__) # Contient le nom de l’instance.
 print(samsung.__class__.__bases__) # Contient les classes dont la classe de l’instance hérite
 print(type(Telephone)
 )
+
+# Fonctions special attributes :
