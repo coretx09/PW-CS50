@@ -23,14 +23,14 @@ class Vol: # class object = Vol
 
     numero_vol = 0 #class attribute(variable )
 
-    def __init__(self, destination, capacity):  # Dunder or special method 
+    def __init__(self, destination, capacity):  # Dunder or special method (avev parametres)
         self.destination = destination # instance attribute (variable)
         self.capacity = capacity
         self.liste = []
-        self.numero_passager = 0
+        self.numero_passager = 0 # instance attribute
         print(5 * '------ -----')
         print(f'La capacite de notre vol est de {capacity} passagers a destination de {destination}' )
-        Vol.numero_vol += 1
+        Vol.numero_vol += 1 #(ATTRIBUTE REFERENCE: classObject.classAttribute)
  
   # ADD NEW PASSAGER
     def add_passager(self, name):
