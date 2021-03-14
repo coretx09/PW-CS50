@@ -35,3 +35,8 @@ __*   class private names
 # Escape Sequence (\)
 phrase = "m'oi  je suis \\\\ //"
 print(phrase)
+
+
+
+#Global & local variable
+'''Variables are containers for storing data values.'''

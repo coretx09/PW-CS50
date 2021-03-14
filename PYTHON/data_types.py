@@ -2,6 +2,8 @@
 """Ce terme désigne le fait d’attribuer un nom ou identificateur à des informations:
  en les nommant, on peut manipuler ces informations beaucoup plus facilement.
 
+    Variables are containers for storing data values.
+
  Une variable est caractérisée par :
  -Un IDENTIFICATEUR : il peut contenir des lettres, des chiffres, des blancs soulignés
    mais il ne peut commencer par un chiffre.

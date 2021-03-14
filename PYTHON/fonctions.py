@@ -1,5 +1,6 @@
 #             FONCTIONS (parametres.....)
-""" Parametres sont des variables appartennant a une fonction.
+""" Parametre(argument) est la variable répertoriée entre parenthèses dans la définition de fonction.
+Par défaut, une fonction doit être appelée avec le nombre correct d'arguments.
 
  La définition de fonction n'exécute pas le corps de la fonction; ceci n'est exécuté que lorsque la fonction
   est appelée.
