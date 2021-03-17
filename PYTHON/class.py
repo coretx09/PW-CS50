@@ -5,7 +5,7 @@
  Class objects:
   Ils prennent en charge deux types d'opérations: attribute references and instantiation.
    -ATTRIBUTE REFERENCE:
-      Ils utilisent la syntaxe standard utilisée pour toutes les références d'attributs en Python: obj.name [name=class attribut OR methods]
+      Ils utilisent la syntaxe standard utilisée pour toutes les références d'attributs en Python: obj.name [name = attribut OR methods]
       Il existe deux types de name attributes valides: data attributes(instance variable) and methods
 
    -INSTANCITION:

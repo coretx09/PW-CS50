@@ -39,4 +39,27 @@ print(phrase)
 
 
 #Global & local variable
-'''Variables are containers for storing data values.'''
+'''Variables are containers for storing data values.
+
+LOCAL VARIABLE:
+If a variable is assigned inside a def, it is local to that function.
+
+GLOBAL VARIABLE:
+If a variable is assigned outside all defs, it is global to the entire file.
+
+'''
+#MODULES 
+''' from namemodule import attribute
+ OR   
+    import namemodule 
+
+attribute ref. : object.name 
+'''
+
+
+# Class's Are Attributes in Modules
+
+from attrib_spec import Telephone
+date = Telephone.date
+print(date)
+

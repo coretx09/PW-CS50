@@ -46,6 +46,7 @@ This object is accessed through the literal ... or the built-in name Ellipsis. I
 #TYPE DE SEQUENCES: string, list, tuple, range.
 '''These represent finite ordered sets indexed by non-negative numbers. 
 The built-in function len() returns the number of items of a sequence.
+Python already has a function to get a random item from a sequence: random.choice. 
 '''
 
   #List (MUTABLE)
@@ -121,9 +122,10 @@ maxlist(maliste)
      - les fonctions intégrées (Built-in functions) e.g: len()......, 
      - Les méthodes des objets intégrés (Built-in methods), e.g: alist.append() [alist= list object, append()=Built-in methods ]
      - Class objects,
-     - Instance methods
+     - methods
      - Et tous les objets ayant une __call__() méthode sont appelables.
        - Class instances arbitraires peuvent être rendues appelables en définissant une __call__()méthode dans leur classe.
+     - Generator functions or methods that use the yield keyword. When called, generator functions return a generator object.
 
  La définition de fonction n'exécute pas le corps de la fonction; ceci n'est exécuté que lorsque la fonction est appelée.
 """

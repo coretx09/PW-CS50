@@ -22,6 +22,29 @@ class OtherDunder:
 other = OtherDunder()
 print(other)
 
+   
+class Firstclass:
+    def setdata(self, value):
+        self.data = value
+        self._error = 'MAGIC'
+
+    def display(self):
+        print(self.data, self._error)
+
+# main :
+# INSTANCITION 
+x = Firstclass()
+y = Firstclass()
+
+x.setdata(65)
+x.display()
+#change instance attribute
+x.setdata('operations')
+x._error = 45
+x.display()
+
+
+
 
  
 

@@ -49,5 +49,7 @@ print(liste3)
 #Python already has a function to get a random item from a sequence: random.choice. 
 print(choice(liste3))
 
+
+# ELLIPSIS 
 for card in deck:
     print(card)

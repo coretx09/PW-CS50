@@ -11,6 +11,8 @@ class  Telephone:
     def __init__(self 
         ):
         self.madein = 'china'
+    def __str__(self):
+        return 'classe Telephone'
     def methodes1(
         self):
         return 'methode1 \
