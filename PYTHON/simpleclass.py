@@ -4,4 +4,9 @@ class Rec:
 Rec.name = 'sexy boy' # Just objects with attributes
 Rec.age = 40 
 
-print(Rec.name)
+print(Rec.name) 
+
+x = Rec() Instances inherit class names
+y = Rec()
+
+

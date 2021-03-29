@@ -9,6 +9,7 @@
  Les méthodes Dunder vous permettent d'émuler le comportement des types intégrés.
  '''
 
+# Operator Overloading __str__ & __repr__
 # __str__ :
 '''Lorsque vous print(miles), vous recevez un message d'apparence énigmatique, Ce message n'est pas très utile'''
 class Dunder:
@@ -23,31 +24,71 @@ other = OtherDunder()
 print(other)
 
    
-class Firstclass:
-    def setdata(self, value):
+class Operator:
+
+    #CONSTRUCTOR:
+    def __init__(self, value=89):
         self.data = value
-        self._error = 'MAGIC'
+        self.words = 'we can'.split()
 
-    def display(self):
-        print(self.data, self._error)
+    #OPERATOR + :    
+    def __add__(self, other):
+        return Operator(self.data + other) # makes a new instances 
 
-# main :
-# INSTANCITION 
-x = Firstclass()
-y = Firstclass()
+    #PRINTING, CONVERSION print()    
+    def __str__(self):
+        return f"it's the Thirdclass {self.data}"
 
-x.setdata(65)
-x.display()
-#change instance attribute
-x.setdata('operations')
-x._error = 45
-x.display()
+    #OPERATOR *:    
+    def __mul__(self, other):
+        self.data *= other
+        return self.data
+
+    #INDEXING, SLICING, ITERATION X[index], X[i:j], for loops and others iterations if no __iter__
+    def __getitem__(self,index):
+        return self.words[index]
+
+    #INDEXING AND SLICE ASSIGNMENT X[index]=value, X[i:j]=iterable:
+    def __setitem__(self, index, value):
+        self.words[index] = value
+
+    #LENGH:
+    def __len__(self):
+        return len(self.words)    
+
+    #FUNCTION CALL:
+    def __call__(self):
+        print(self.words)
+
+#   ___MAIN PROGRAM___ :
+
+df = Operator()
+
+#getitem:
+print(df[1])
+for i in df: print(i)
+print('can' in df)
+
+#len:
+print(len(df))
+
+#setitem:
+df[1] = 'not'
+
+#call
+df()
+
+#mul
+df * 2
+
+#------------------------0--------------------
 
 
-
-
- 
-
+# ITERATION 
+class Squares:
+    def __init__(self, start, stop):
+        self.value = start - 1
+        self.stop = stop
 
 
 

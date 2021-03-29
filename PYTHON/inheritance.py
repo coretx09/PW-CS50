@@ -1,3 +1,6 @@
+#decorator 
+
+
 #  A FIRST EXAMPLE
 class Firstclass:  # define a class object 
     def setdata(self, value):
@@ -56,6 +59,29 @@ print(tc1, tc2, tc1[1])
 
 
 
+# Customizing Constructors __init__:
+class Person:
+    def __init__(self, name, jobe=None, pay=0):
+        self.name = name
+        self.jobe =jobe
+        self.pay = pay
+    def __call__(self):
+        return self.name, self.jobe, self.pay
+# subclass
+class Manager(Person):
+    def __init__(self, name, pay): # Redefine constructor
+        Person.__init__(self, name, 'manager', pay) # Run orignal with "mgr"
+
+tom = Manager('TOM', pay=65000)
+print(tom())
+
+eric = Person('ERIC', 'programer', 150000)
+print(eric())
+
+# subclass
+class Programer(Person):
+    def __init__(self, name, pay):
+        self.person = Person(name, 'programer', pay) #Embed a Person object
 
 
 
