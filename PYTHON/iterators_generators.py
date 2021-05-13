@@ -73,8 +73,11 @@ class Squares:
         return self.n ** 2'''
             
 premier = Squares(5)
-for i in premier: print(i)
-
+for i in premier: print(type(i), i)
+mylist1 = [i for i in Squares(5)]
+mylist2 = [i for i in premier]
+print('myliste2', mylist2)
+print ('myliste1',mylist1)
 first = Squares(3)
 print(next(first))
 print(next(first))
@@ -90,12 +93,16 @@ class Diplome:
         return self
     def __next__(self):
         for n in self.diplomes:
+            
             if self.i < len(self.diplomes):
                 self.i += 1
+                print (f'Diplome number{self.i}: {n}')
             else:
                 raise StopIteration
-            return f'Diplome number{self.i}: {n}'
 
+
+    
 sauvet = Diplome()
 for i in sauvet: print(i)
-    
+mylist = [i for i in sauvet]
+print(mylist)
