@@ -91,7 +91,13 @@ COMMANDE BASE TERMINAL :
   
   WIND: tapez Nettoyage de disque
   NAV: cache navigateur 
-
+  
+  
+  BLUETOOTH:
+   sudo apt-get install blueman
+   modprobe btusb
+   sudo systemctl enable bluetooth.service
+   sudo systemctl start bluetooth.service
 
 
 
