@@ -89,6 +89,9 @@ COMMANDE BASE TERMINAL :
  VIDER CACHE 
   free -h && sudo sysctl vm.drop_caches=3 && free -h
   
+ Supprimer tout le cache :
+  sudo apt clean
+  
   WIND: tapez Nettoyage de disque
   NAV: cache navigateur 
   
