@@ -114,3 +114,14 @@ COMMANDE BASE TERMINAL :
  Basculez entre les branches 
 
  --->    git merge <other branch name>
+ 
+ --->    git reset --hard HEAD
+ Réparer une erreur non-committée
+ 
+ --->    git checkout HEAD hello.rb / git checkout -- hello.rb
+ restaurer qu’un seul fichier n.c
+ 
+ --->    git revert HEAD
+ Réparer une erreur committée, un nouveau commit qui annule les changements d’un commit précédent
+ 
+ 
